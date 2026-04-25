@@ -59,7 +59,7 @@ const Onboarding = () => {
 
         toast.success('Profile setup complete! 🚀', { id: toastId });
         setOnboardingCompleted(true);
-        await fetchUser(user?.token || ""); // Refresh user data in context
+        await fetchUser(); // Refresh user data in context
       } catch (error: any) {
         toast.error("Failed to save profile. Please try again.", { id: toastId });
       }

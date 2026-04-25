@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TimerIcon, FlameIcon, TrashIcon, ZapIcon } from "lucide-react";
+import { TimerIcon, FlameIcon, TrashIcon } from "lucide-react";
 import type { ActivityEntry } from "../../types";
 
 // Map activity names to gradient styles for visual variety

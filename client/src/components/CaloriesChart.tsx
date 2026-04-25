@@ -3,7 +3,7 @@ import {
     BarChart, Bar, XAxis, YAxis, Tooltip,
     ResponsiveContainer, CartesianGrid,
 } from 'recharts';
-import type { TooltipProps } from 'recharts';
+
 import { useAppContext } from '../context/AppContext';
 import { useTheme } from '../context/ThemeContext';
 

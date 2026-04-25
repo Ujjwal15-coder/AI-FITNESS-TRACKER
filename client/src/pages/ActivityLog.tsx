@@ -31,7 +31,7 @@ import { useAppContext } from "../context/AppContext";
 import { useTheme } from "../context/ThemeContext";
 import type { ActivityEntry } from "../types";
 import { quickActivities } from "../assets/assets";
-import mockApi from "../assets/mockApi";
+
 
 import Input from "../components/ui/Input";
 import Button from "../components/ui/Button";

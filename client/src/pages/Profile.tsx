@@ -37,7 +37,7 @@ import {
 import { useAppContext } from "../context/AppContext";
 import { useTheme } from "../context/ThemeContext";
 import { goalLabels, goalOptions } from "../assets/assets";
-import mockApi from "../assets/mockApi";
+
 import Input from "../components/ui/Input";
 import Select from "../components/ui/Select";
 import Button from "../components/ui/Button";

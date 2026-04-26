@@ -5,9 +5,9 @@
 **Next-Gen AI-Powered Calorie & Workout Intelligence Platform**
 
 🌐 **Live Project:**
-👉 https://ai-fitness-tracker-ten.vercel.app/
+👉 https://fitness-gs.vercel.app/
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge\&logo=vercel)](https://ai-fitness-tracker-ten.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge\&logo=vercel)](https://fitness-gs.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.0-blue?style=for-the-badge\&logo=react)](https://react.dev)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge\&logo=tailwind-css\&logoColor=white)](https://tailwindcss.com/)
 [![Strapi](https://img.shields.io/badge/Strapi_v5-2F2E8B?style=for-the-badge\&logo=strapi\&logoColor=white)](https://strapi.io/)
@@ -19,7 +19,6 @@
 ---
 
 ## 📸 Preview
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e3777ef1-13f8-4289-a13f-97554a7d25e4" width="90%" />
 </p>

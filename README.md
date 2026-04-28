@@ -5,7 +5,7 @@
 **Next-Gen AI-Powered Calorie & Workout Intelligence Platform**
 
 🌐 **Live Project:**
-👉 https://fitness-gs.vercel.app/
+👉  https://ai-fitness-tracker-ten.vercel.app/
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge\&logo=vercel)]( https://ai-fitness-tracker-ten.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.0-blue?style=for-the-badge\&logo=react)](https://react.dev)

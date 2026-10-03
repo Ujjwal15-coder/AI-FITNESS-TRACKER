@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-    // VITE_STRAPI_API_URL should point to http://localhost:1337/api for Strapi v5 routes
-    baseURL: import.meta.env.VITE_STRAPI_API_URL + "/api",
+    // In production (Vercel), use relative "/api" so requests go through the Vercel proxy rewrite.
+    // In local dev, VITE_STRAPI_API_URL points to http://localhost:1337.
+    baseURL: (import.meta.env.VITE_STRAPI_API_URL || "") + "/api",
 });
 
 // Add a request interceptor to attach the JWT token

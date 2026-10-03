@@ -7,7 +7,7 @@ import { Loader2Icon, PlusIcon, SparkleIcon, Trash2Icon, UtensilsCrossedIcon } f
 import Button from "../components/ui/Button";
 import Input from "../components/ui/Input";
 import Select from "../components/ui/Select";
-import api from "../lib/axios";
+import api from "../configs/api"
 import toast from "react-hot-toast";
 
 

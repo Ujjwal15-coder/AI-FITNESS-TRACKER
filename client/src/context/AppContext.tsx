@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { initialState, type ActivityEntry, type Credentials, type FoodEntry, type User } from "../types";
 import { useNavigate } from "react-router-dom";
-import api from "../lib/axios";
+import api from "../configs/api";
 
 // Helper to determine if onboarding is completed based on user data
 const checkOnboarding = (user: any): boolean => {

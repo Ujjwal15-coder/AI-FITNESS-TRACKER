@@ -43,15 +43,17 @@ const FoodLog = () => {
         }
       });
 
-      // Map back to frontend type
+      // Map back to frontend type (handle both { data: entry } and direct entry)
+      const entryData = data?.data || data;
+
       const newEntry: FoodEntry = {
-        id: data.data.id,
-        documentId: data.data.documentId,
-        name: data.data.name,
-        calories: data.data.calories,
-        mealType: data.data.mealType,
-        createdAt: data.data.createdAt,
-        date: data.data.createdAt?.split('T')[0] || today,
+        id: entryData.id,
+        documentId: entryData.documentId,
+        name: entryData.name,
+        calories: Number(entryData.calories),
+        mealType: entryData.mealType,
+        createdAt: entryData.createdAt || new Date().toISOString(),
+        date: entryData.createdAt?.split('T')[0] || today,
       };
 
       setAllFoodLogs(prev => [...prev, newEntry])
@@ -59,7 +61,9 @@ const FoodLog = () => {
       setShowForm(false)
       toast.success("Food logged! 🍎", { id: toastId });
     } catch (error: any) {
-      toast.error("Failed to log food.", { id: toastId });
+      console.error("Failed to log food:", error);
+      const errMsg = error?.response?.data?.error?.message || error?.message || "Failed to log food.";
+      toast.error(errMsg, { id: toastId });
     }
   }
 

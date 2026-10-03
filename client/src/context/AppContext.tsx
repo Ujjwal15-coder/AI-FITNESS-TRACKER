@@ -75,8 +75,9 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
     const fetchFoodLogs = async () => {
         try {
             const { data } = await api.get("/food-logs");
+            const rawList = Array.isArray(data?.data) ? data.data : (Array.isArray(data) ? data : []);
             // Map Strapi fields (foodName) to frontend (name)
-            const mappedData: FoodEntry[] = (data.data || []).map((item: any) => ({
+            const mappedData: FoodEntry[] = rawList.map((item: any) => ({
                 ...item,
                 id: item.id,
                 documentId: item.documentId,
@@ -94,8 +95,9 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
     const fetchActivityLogs = async () => {
         try {
             const { data } = await api.get("/activity-logs");
+            const rawList = Array.isArray(data?.data) ? data.data : (Array.isArray(data) ? data : []);
             // Map Strapi fields (activityName, caloriesBurned) to frontend (name, calories)
-            const mappedData: ActivityEntry[] = (data.data || []).map((item: any) => ({
+            const mappedData: ActivityEntry[] = rawList.map((item: any) => ({
                 ...item,
                 id: item.id,
                 documentId: item.documentId,

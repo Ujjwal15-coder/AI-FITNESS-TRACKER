@@ -20,7 +20,7 @@ export default factories.createCoreController('api::food-log.food-log',({strapi}
             populate:["users_permissions_user"]
         }
     )
-    return entry;
+    return { data: entry };
 },
  async find(ctx){
         const user = ctx.state.user
@@ -30,7 +30,7 @@ export default factories.createCoreController('api::food-log.food-log',({strapi}
             populate:["users_permissions_user"]
         }
     )
-    return result;
+    return { data: result };
 },
 async findOne(ctx){
         const user = ctx.state.user;
@@ -42,7 +42,7 @@ async findOne(ctx){
         }
     )
     if(!result.length) return ctx.notFound("Not Found or not yours") 
-    return result[0];
+    return { data: result[0] };
 }
     
 }));
